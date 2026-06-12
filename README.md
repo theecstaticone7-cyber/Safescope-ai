@@ -1,0 +1,33 @@
+# SafeScope AI
+
+**Agentic Urban Safety Decision Engine for Indian Cities**
+
+SafeScope AI helps users make safer travel decisions in Indian cities using real NCRB crime data, 6 LangGraph agents, MCP tools, RAG explanations, and trust-weighted community signals. Supports Hindi and English queries.
+
+## Services
+
+| Service | Folder | Deployed To |
+|---|---|---|
+| React Frontend | `frontend/` | Vercel |
+| Node.js Backend | `backend/` | Railway / Render |
+| Python AI Service | `ai-service/` | Hugging Face Spaces |
+
+## Quick Start (Development)
+
+```bash
+# Backend
+cd backend && npm install && npm run dev
+
+# Frontend
+cd frontend && npm install && npm start
+
+# AI Service
+cd ai-service && pip install -r requirements.txt && uvicorn main:app --reload
+```
+
+## Data
+Real NCRB crime data + geospatial enrichment. See `data/` folder.
+
+## Disclaimer
+This platform uses NCRB government crime statistics for demonstration purposes.
+It does not guarantee real-time safety. Always use official emergency services (112) in real danger.

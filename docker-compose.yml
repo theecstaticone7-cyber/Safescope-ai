@@ -1,0 +1,25 @@
+# TODO (Day 24): Fill in real Docker config before deployment
+# Placeholder — three services: frontend, backend, ai-service
+version: "3.9"
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:5000
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    env_file: .env
+    depends_on:
+      - ai-service
+
+  ai-service:
+    build: ./ai-service
+    ports:
+      - "8000:8000"
+    env_file: .env
