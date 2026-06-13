@@ -68,3 +68,7 @@ logs/
 # ── Claude Code internal folder ───────────────────────────────────────────────
 # Contains AI session memory — not project source code.
 .claude/
+
+# ── Claude project instructions ──────────────────────────────────────────────
+# Kept locally for AI context but not pushed to GitHub.
+CLAUDE.md
