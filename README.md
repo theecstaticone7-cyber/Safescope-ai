@@ -25,6 +25,14 @@ cd frontend && npm install && npm start
 cd ai-service && pip install -r requirements.txt && uvicorn main:app --reload
 ```
 
+## Progress
+
+| Day | What Was Built |
+|-----|----------------|
+| Day 1 | Project scaffold — 3-service architecture (React, Node.js, FastAPI), folder structure, all agent/MCP/RAG placeholders |
+| Day 2 | Real NCRB crime data downloaded and inspected (`inspect_ncrb.py`, `process_ncrb.py`) |
+| Day 3 | Incident-level dataset built — 12,926 records across 19 cities and 12 risk categories, expanded from NCRB aggregates |
+
 ## Data
 Real NCRB crime data + geospatial enrichment. See `data/` folder.
 
